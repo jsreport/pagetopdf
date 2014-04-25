@@ -1,0 +1,14 @@
+﻿.give-me-pdf {
+       background-color: #F0F0F0;
+    border: 0 none;
+    display: block;
+    height: 24px;
+    margin: 0;
+    min-height: 1px;
+    min-width: 1px;
+    padding: 0;
+    position: absolute !important;
+    right: 4px;
+    top: 5px;  
+    z-index: 2;
+}

@@ -1,0 +1,48 @@
+﻿
+.com {
+    color: #93A1A1 !important;
+}
+.lit {
+    color: #195F91 !important;
+}
+.pun, .opn, .clo {
+    color: #93A1A1 !important;
+}
+.fun {
+    color: #DC322F !important;
+}
+.str, .atv {
+    color: #DD1144 !important;
+}
+.kwd, .tag {
+    color: #1E347B !important;
+}
+.typ, .atn, .dec, .var {
+    color: #008080 !important;
+}
+.pln {
+    color: #48484C !important;
+}
+.prettyprint {
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    font-family: 'Courier New',monospace;
+    font-size: 11pt;
+    line-height: 12pt;
+    margin: 0 0 10px;
+    padding: 8px;
+}
+.prettyprint.linenums {
+    box-shadow: 40px 0 0 #EEEEEE inset, 41px 0 0 #ECECF0 inset;
+}
+.prettyprint ol.linenums {
+    margin: 0;
+    padding-left: 35px;
+}
+.prettyprint ol.linenums li {
+    color: #999999;
+    line-height: 10pt;
+    margin-bottom: 5px;
+    padding-left: 12px !important;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
