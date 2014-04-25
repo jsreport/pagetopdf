@@ -1,54 +1,62 @@
-﻿<div class="row">
-
-<form target='_blank' method='POST' enctype='multipart/form-data' action='https://playground.jsreport.net/api/report'>
-    <fieldset>
-        <legend>Convert url to pdf</legend>
-        <label>Url to web site</label>
-        <div data-role="input-control" class="input-control text size6">
-            <input type="url" placeholder="http://google.com" name='template[phantom[url]'>
-
-            <button type='submit' class="image-button info give-me-pdf">
-                give me pdf                                   
-                <img class="bg-cobalt" src="/img/download-32.png">
-            </button>
-
-            <input hidden='hidden' type='text' name='template[recipe]' value='phantom-pdf' />
-        </div>
-    </fieldset>
-</form>
-
+<div class="bg-cyan main-title">                
+  <div class="container padding20 fg-white">                    
+    <h1 class="fg-white">
+      <a href="/">
+        <i class="icon-download smaller fg-white"></i></a> Convert HTML to PDF <small>Online</small></h1>                
+  </div>
 </div>
 
-<div class="row fluid">
+<div class="bg-white convert-area">
+  <div class="container">
+    <div class="row">  
+   
+      <form target='_blank' class="form-url" method='POST' enctype='multipart/form-data' action='https://playground.jsreport.net/api/report'>         
+           
+          <h2>Convert HTML to PDF Online</h2>               
+           
+          <div data-role="input-control" class="input-control text size6 input-url">                     
+            <input type="url" placeholder="Url here ..." name='template[phantom[url]'></div>
+            <input type="submit" class="button large bg-red fg-white btn-give-pdf" value="Give Me PDF" /> 
+            <input hidden='hidden' type='text' name='template[recipe]' value='phantom-pdf' />           
+          </div>         
 
-    <div class="span6">
-        <h2>embedding</h2>
-        <pre class="prettyprint linenums">
-&lt;div id=&quot;jsr-root&quot;&gt;&lt;/div&gt;<br/>
-&lt;script&gt;<br/>
-(function (d, s, id) {<br/>
-    var js, fjs = d.getElementsByTagName(s)[0];<br/>
-    if (d.getElementById(id)) return;<br/>
-    js = d.createElement(s); js.id = id;<br/>
-    js.src = &quot;//137.117.246.16:882/js/pagetopdf.js&quot;;<br/>
-    fjs.parentNode.insertBefore(js, fjs);<br/>
-  }(document, 'script', 'jsr-pagetopdf'));<br/>
-&lt;/script&gt;  
-        </pre>
+      </form>
     </div>
+  </div>
+  <div class="bg-grayLighter">
+    <div class="container">
+      <div class="row fluid center">       
+       
+        <h2>Generate Simply what you want. Embedding code to your page.</h2>        
+ 
+          <pre class="prettyprint linenums no-center">
+            &lt;div id=&quot;jsr-root&quot;&gt;&lt;/div&gt;<br/>
+            &lt;script&gt;<br/>
+            (function (d, s, id) {<br/>
+                var js, fjs = d.getElementsByTagName(s)[0];<br/>
+                if (d.getElementById(id)) return;<br/>
+                js = d.createElement(s); js.id = id;<br/>
+                js.src = &quot;//137.117.246.16:882/js/pagetopdf.js&quot;;<br/>
+                fjs.parentNode.insertBefore(js, fjs);<br/>
+              }(document, 'script', 'jsr-pagetopdf'));<br/>
+            &lt;/script&gt;  
+          </pre>  
+        <div id="jsr-root"></div>   
+        
+        <div class="notice marker-on-top">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at sollicitudin leo. Duis sed nisi auctor, fermentum orci in, dapibus diam. Donec in augue posuere, venenatis tellus nec, tristique arcu. Nullam sed dapibus leo, eu dapibus quam. Curabitur at lorem ac odio rhoncus convallis quis sit amet eros. Nam at sem laoreet, interdum felis id, viverra lacus. Vivamus id adipiscing lorem. Maecenas libero quam, suscipit et luctus ut, placerat in nulla. Nam tristique pulvinar augue, in hendrerit odio gravida vel. Pellentesque nisi nibh, aliquet eget auctor eget, ultricies in magna. Praesent adipiscing lobortis justo, eu vulputate sapien consequat pharetra.
 
-    <div class="span6">
-        <h2>preview</h2>
-
-        <div id="jsr-root"></div>
-        <script>
-            (function (d, s, id) {
-                var js, fjs = d.getElementsByTagName(s)[0];
-                if (d.getElementById(id)) return;
-                js = d.createElement(s); js.id = id;
-                js.src = "//137.117.246.16:882/js/pagetopdf.js";
-                fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'jsr-pagetopdf'));
-        </script> 
+        </div>       
+      </div>
     </div>
-</div>
+  </div>
+</div>        
+<script>
+    (function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//137.117.246.16:882/js/pagetopdf.js";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'jsr-pagetopdf'));
+</script>  

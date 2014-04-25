@@ -1,58 +1,61 @@
-﻿<!DOCTYPE html>
-<html class="dyn orchard-blogs" lang="en-US">
-<head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
-    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<!DOCTYPE html>
+<html class="dyn orchard-blogs" lang="en-US">  
+  <head>         
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">         
+    <meta charset="utf-8">         
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">         
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
-    {{#if description}}<meta name="description" content="{{{description}}}">{{/if}}
-        <title>{{#if title}}{{{title}}}{{else}}Web Page To Pdf Free Convert{{/if}}</title>
-    <link rel="stylesheet" href="/css/prettify.css">
-    <link rel="stylesheet" href="/css/metro-bootstrap.min.css">
-    <link rel="stylesheet" href="/css/metro-bootstrap-responsive.min.css">
-    <link rel="stylesheet" href="/css/iconFont.min.css">    
-    <link rel="stylesheet" href="/css/custom.css">
-    <script src="/js/jquery-2.1.0.min.js"> </script>
-    <script src="/js/jquery.widget.min.js"> </script>
-    <script src="/js/prettify.js"> </script>
-    <script src="/js/metro.min.js"> </script>    
-    <link href="/img/favicon.png" rel="shortcut icon" type="image/x-icon">
-</head>
-<body class="metro" style="background-color: #f8f4ef" onload="prettyPrint()">
-    <header class="bg-dark" data-load="header.html">
-        <div class="navigation-bar dark">
-            <div class="navigation-bar-content container">
-                <a href="/" class="element"><span></span>Page to Pdf Free Convert</a>
-                <span class="element-divider"></span>
-                <a class="pull-menu" href="#"></a> 
-                <a href="/api" class="element"><span></span>Api</a>
-                <a href="/about" class="element"><span></span>About</a>
-            </div>
-        </div>
-    </header>
-
-    <div class="">
-        <div style="background: url(/img/b1.jpg) top left no-repeat; background-size: cover; height: 250px;">
-            <div class="container" style="padding: 10px 20px">
-                <h1 class="fg-darkCobalt">Free web page to pdf online converter</h1>               
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="grid">{{{fixCoding body}}}</div>
-        </div>
-
-        <div class="bg-dark">
-            <div class="container" style="padding: 10px 0;">
-                <div class="grid no-margin">
-                    <div class="row no-margin">
-                        <div class="span12">
-                            <h1 class="fg-white">Powered by jsreport!</h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>    
-</body>
+    {{#if description}}     
+    <meta name="description" content="{{{description}}}">{{/if}}              
+    <title>{{#if title}}{{{title}}}{{else}}Web Page To Pdf Free Convert{{/if}}     
+    </title>         
+    <link rel="stylesheet" href="/css/prettify.css">         
+    <link rel="stylesheet" href="/css/metro-bootstrap.min.css">         
+    <link rel="stylesheet" href="/css/metro-bootstrap-responsive.min.css">         
+    <link rel="stylesheet" href="/css/iconFont.min.css">              
+    <link rel="stylesheet" href="/css/custom.css">     
+    <link href="/img/favicon.png" rel="shortcut icon" type="image/x-icon">  
+    <script src="/js/jquery-2.1.0.min.js"> </script>      
+    <script src="/js/jquery.widget.min.js"> </script>      
+    <script src="/js/prettify.js"> </script>      
+    <script src="/js/metro.min.js"> </script>               
+  </head>  
+  <body class="metro" onload="prettyPrint()">          
+    <div id="wrap" class="bg-grayLighter">         
+      <header class="bg-dark" data-load="header.html">               
+        <div class="navigation-bar dark">                     
+          <div class="navigation-bar-content container">                          
+            <a class="element brand" href="/">                                     
+              <div class="brand-logo">                                     
+              </div></a>        
+            <div class="element place-right" title="Generated PDFs">        
+              <span class="icon-star">
+              </span> 
+              <span class="fg-yellow">3305
+              </span> Generated PDFs
+              </span>
+            </div>                     
+          </div>               
+        </div>         
+      </header>                                
+      <div class="grid">{{{fixCoding body}}}       
+      </div>                   
+      <div class="bg-dark block4">                   
+        <div class="container">                         
+          <div class="grid no-margin">                               
+            <div class="row no-margin">                                     
+                                         
+                <h2 class="fg-white center">Converter powered by 
+                  <a href="http://jsreport.net" class="jsreport-logo"></a></h2>                                                 
+                <div id="footer" class="bg-dark">            
+                  <div class="fg-grayLighter center">           
+                  </div>                 
+                </div>            
+                              
+            </div>                         
+          </div>                   
+        </div>             
+      </div>    
+    </div>  
+  </body>
 </html>
