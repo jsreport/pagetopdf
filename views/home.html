@@ -1,62 +1,178 @@
 <div class="bg-cyan main-title">                
-  <div class="container padding20 fg-white">                    
-    <h1 class="fg-white">
-      <a href="/">
-        <i class="icon-download smaller fg-white"></i></a> Convert HTML to PDF <small>Online</small></h1>                
-  </div>
+    <div class="container padding20 fg-white">                    
+        <h1 class="fg-white">
+            <a href="/">
+                <i class="icon-download smaller fg-white"></i></a> Free html web page to PDF online convert</h1>                
+    </div>
 </div>
 
 <div class="bg-white convert-area">
-  <div class="container">
-    <div class="row">  
-   
-      <form target='_blank' class="form-url" method='POST' enctype='multipart/form-data' action='https://playground.jsreport.net/api/report'>         
-           
-          <h2>Convert HTML to PDF Online</h2>               
-           
-          <div data-role="input-control" class="input-control text size6 input-url">                     
-            <input type="url" placeholder="Url here ..." name='template[phantom[url]'></div>
-            <input type="submit" class="button large bg-red fg-white btn-give-pdf" value="Give Me PDF" /> 
-            <input hidden='hidden' type='text' name='template[recipe]' value='phantom-pdf' />           
-          </div>         
-
-      </form>
-    </div>
-  </div>
-  <div class="bg-grayLighter">
     <div class="container">
-      <div class="row fluid center">       
-       
-        <h2>Generate Simply what you want. Embedding code to your page.</h2>        
- 
-          <pre class="prettyprint linenums no-center">
-            &lt;div id=&quot;jsr-root&quot;&gt;&lt;/div&gt;<br/>
-            &lt;script&gt;<br/>
-            (function (d, s, id) {<br/>
-                var js, fjs = d.getElementsByTagName(s)[0];<br/>
-                if (d.getElementById(id)) return;<br/>
-                js = d.createElement(s); js.id = id;<br/>
-                js.src = &quot;//137.117.246.16:882/js/pagetopdf.js&quot;;<br/>
-                fjs.parentNode.insertBefore(js, fjs);<br/>
-              }(document, 'script', 'jsr-pagetopdf'));<br/>
-            &lt;/script&gt;  
-          </pre>  
-        <div id="jsr-root"></div>   
-        
-        <div class="notice marker-on-top">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at sollicitudin leo. Duis sed nisi auctor, fermentum orci in, dapibus diam. Donec in augue posuere, venenatis tellus nec, tristique arcu. Nullam sed dapibus leo, eu dapibus quam. Curabitur at lorem ac odio rhoncus convallis quis sit amet eros. Nam at sem laoreet, interdum felis id, viverra lacus. Vivamus id adipiscing lorem. Maecenas libero quam, suscipit et luctus ut, placerat in nulla. Nam tristique pulvinar augue, in hendrerit odio gravida vel. Pellentesque nisi nibh, aliquet eget auctor eget, ultricies in magna. Praesent adipiscing lobortis justo, eu vulputate sapien consequat pharetra.
-
-        </div>       
-      </div>
+        <div class="row">  
+            <form target='_blank' class="form-url" method='POST' enctype='multipart/form-data' action='https://playground.jsreport.net/api/report'>         
+                <h2>Url to pdf online convert</h2>               
+           
+                <div data-role="input-control" class="input-control text size6 input-url">                     
+                    <input type="url" placeholder="Url here ..." name='template[phantom[url]'>
+                </div>
+                <input type="submit" class="button large bg-green fg-white btn-url-convert" value="Give Me PDF" /> 
+                <input type="button" data-role="accordion" class="button large bg-blue fg-white btn-url-convert" id="settings" value="Settings"/> 
+                <input hidden='hidden' type='text' name='template[recipe]' value='phantom-pdf' />  
+                <input hidden='hidden' type='text' name='template[phantom[format]' id="url-format-input" value='A4' />  
+                <input hidden='hidden' type='text' name='template[phantom[orientation]' id="url-orientation-input" value='portrait' />  
+                
+                <div id="settings-expand" style="display: none" class="notice marker-on-top">
+                    <div class="row fluid">
+                        <div class="span2">
+                            <label>Paper format</label>
+                            <div data-role="input-control" class="input-control">
+                                <div class="button-dropdown">
+                                    <button class="dropdown-toggle info">A4</button>
+                                    <ul class="dropdown-menu" data-role="dropdown"  id="url-format">
+                                        <li>A4</li>
+                                        <li>A3</li>
+                                        <li>A5</li>
+                                        <li>Legal</li>
+                                        <li>Letter</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="span2">
+                            <label>Paper orientation</label>
+                            <div data-role="input-control" class="input-control">
+                                <div class="button-dropdown">
+                                    <button class="dropdown-toggle info">portrait</button>
+                                    <ul class="dropdown-menu" data-role="dropdown" id="url-orientation">
+                                        <li>potrait</li>
+                                        <li>landscape</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row fluid">
+                        <div class="span4">
+                            <label>Header</label>
+                            <div class="input-control textarea">
+                                <textarea name="template[phantom[header]" placeholder="Html code..."></textarea>
+                            </div>
+                        </div>
+                        <div class="span4">
+                            <label>Footer</label>
+                            <div class="input-control textarea">
+                                <textarea name="template[phantom[footer]" placeholder="Html code..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>         
+            </form>
+        </div> 
     </div>
-  </div>
-</div>        
+</div>    
+<div class="bg-grayLighter">
+    <div class="container">
+        <div class="row fluid center">
+            <h2>Embed pdf print button to your page</h2>  
+        </div>
+        <div class="row fluid center">
+            <div class="accordion span8 with-marker" data-role="accordion" data-closeany="false">
+                <div class="accordion-frame">
+                    <a href="#" class="heading bg-lightBlue fg-white collapsed">Choose settings</a>
+                    <div class="content">
+                        <div class="row fluid">
+                            <div class="span2">
+                                <label>Paper format</label>
+                                <div data-role="input-control" class="input-control">
+                                    <div class="button-dropdown">
+                                        <button class="dropdown-toggle info">A4</button>
+                                        <ul class="dropdown-menu" data-role="dropdown"  id="page-format">
+                                            <li>A4</li>
+                                            <li>A3</li>
+                                            <li>A5</li>
+                                            <li>Legal</li>
+                                            <li>Letter</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="span2">
+                                <label>Paper orientation</label>
+                                <div data-role="input-control" class="input-control">
+                                    <div class="button-dropdown">
+                                        <button class="dropdown-toggle info">portrait</button>
+                                        <ul class="dropdown-menu" data-role="dropdown" id="page-orientation">
+                                            <li>potrait</li>
+                                            <li>landscape</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="span2">
+                                <label>Color</label>
+                                <div data-role="input-control" class="input-control">
+                                    <div class="button-dropdown">
+                                        <button class="dropdown-toggle info bg-red fg-white">red</button>
+                                        <ul class="dropdown-menu" data-role="dropdown"  id="color">
+                                            <li class="fg-white" style="background-color: red">red</li>
+                                            <li class="fg-white" style="background-color: green">green</li>
+                                            <li class="fg-white" style="background-color: blue">blue</li>
+                                            <li class="fg-white" style="background-color: cornflowerblue" >cornflowerblue</li>
+                                            <li class="fg-white" style="background-color: gray" >gray</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="accordion-frame">
+                    <a href="#" class="heading bg-green fg-white">Copy paste code</a>
+                    <div class="content">
+                        <pre class="prettyprint linenums no-center" id="embed-code">
+                         </pre>  
+                    </div>
+                </div>
+            </div>
+              
+            <div class="accordion span4"  data-role="accordion" data-closeany="false">
+                <div class="accordion-frame">
+                    <a href="#" class="heading bg-blue fg-white"> See widget preview</a>
+                    <div class="content" style="display: block">
+                        <div id="jsr-root"></div> 
+                    </div>
+                </div>
+            </div>
+
+           
+
+            
+          
+        </div>
+        <div class="notice marker-on-top">
+            This software is provided by the copyright holders and contributors "as is"
+            and any express or implied warranties, including, but not limited to, the
+            implied warranties of merchantability and fitness for a particular purpose
+            are disclaimed. In no event shall the copyright owner or contributors be
+            liable for any direct, indirect, incidental, special, exemplary, or
+            consequential damages (including, but not limited to, procurement of
+            substitute goods or services; loss of use, data, or profits; or business
+            interruption) however caused and on any theory of liability, whether in
+            contract, strict liability, or tort (including negligence or otherwise)
+            arising in any way out of the use of this software, even if advised of the
+            possibility of such damage. 
+        </div>       
+    </div>
+</div>    
+
 <script>
-    (function (d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//137.117.246.16:882/js/pagetopdf.js";
-    fjs.parentNode.insertBefore(js, fjs);
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//pagetopdf.com/js/widget.js";
+        fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'jsr-pagetopdf'));
-</script>  
+</script>

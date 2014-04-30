@@ -30,10 +30,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.js" />
+    <Compile Include="public\js\custom.js" />
     <Compile Include="public\js\jquery-2.1.0.min.js" />
     <Compile Include="public\js\jquery.widget.min.js" />
+    <Compile Include="public\js\metro-dropdown.js" />
     <Compile Include="public\js\metro.min.js" />
-    <Compile Include="public\js\pagetopdf.js" />
+    <Compile Include="public\js\widget.js" />
     <Compile Include="public\js\prettify.js" />
     <Content Include="package.json" />
     <Content Include="public\css\custom.css" />

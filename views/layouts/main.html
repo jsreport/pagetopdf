@@ -1,61 +1,70 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html class="dyn orchard-blogs" lang="en-US">  
-  <head>         
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">         
-    <meta charset="utf-8">         
-    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">         
-    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
-    {{#if description}}     
-    <meta name="description" content="{{{description}}}">{{/if}}              
-    <title>{{#if title}}{{{title}}}{{else}}Web Page To Pdf Free Convert{{/if}}     
-    </title>         
-    <link rel="stylesheet" href="/css/prettify.css">         
-    <link rel="stylesheet" href="/css/metro-bootstrap.min.css">         
-    <link rel="stylesheet" href="/css/metro-bootstrap-responsive.min.css">         
-    <link rel="stylesheet" href="/css/iconFont.min.css">              
-    <link rel="stylesheet" href="/css/custom.css">     
-    <link href="/img/favicon.png" rel="shortcut icon" type="image/x-icon">  
-    <script src="/js/jquery-2.1.0.min.js"> </script>      
-    <script src="/js/jquery.widget.min.js"> </script>      
-    <script src="/js/prettify.js"> </script>      
-    <script src="/js/metro.min.js"> </script>               
-  </head>  
-  <body class="metro" onload="prettyPrint()">          
-    <div id="wrap" class="bg-grayLighter">         
-      <header class="bg-dark" data-load="header.html">               
-        <div class="navigation-bar dark">                     
-          <div class="navigation-bar-content container">                          
-            <a class="element brand" href="/">                                     
-              <div class="brand-logo">                                     
-              </div></a>        
-            <div class="element place-right" title="Generated PDFs">        
-              <span class="icon-star">
-              </span> 
-              <span class="fg-yellow">3305
-              </span> Generated PDFs
-              </span>
-            </div>                     
-          </div>               
-        </div>         
-      </header>                                
-      <div class="grid">{{{fixCoding body}}}       
-      </div>                   
-      <div class="bg-dark block4">                   
-        <div class="container">                         
-          <div class="grid no-margin">                               
-            <div class="row no-margin">                                     
-                                         
-                <h2 class="fg-white center">Converter powered by 
-                  <a href="http://jsreport.net" class="jsreport-logo"></a></h2>                                                 
-                <div id="footer" class="bg-dark">            
-                  <div class="fg-grayLighter center">           
-                  </div>                 
-                </div>            
+    <head>         
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">         
+        <meta charset="utf-8">         
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">         
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+        {{#if description}}     
+        <meta name="description" content="{{{description}}}">{{/if}}              
+        <title>{{#if title}}{{{title}}}{{else}}Web Page To Pdf Free Convert{{/if}}     
+        </title>         
+        <link rel="stylesheet" href="/css/prettify.css">         
+        <link rel="stylesheet" href="/css/metro-bootstrap.min.css">         
+        <link rel="stylesheet" href="/css/metro-bootstrap-responsive.min.css">         
+        <link rel="stylesheet" href="/css/iconFont.min.css">              
+        <link rel="stylesheet" href="/css/custom.css">     
+        <link href="/img/pdf-ico.png" rel="shortcut icon" type="image/x-icon">  
+        <script src="/js/jquery-2.1.0.min.js"> </script>      
+        <script src="/js/jquery.widget.min.js"> </script>      
+        <script src="/js/prettify.js"> </script>      
+        <script src="/js/metro.min.js"> </script>               
+        <script src="/js/custom.js"> </script>               
+    </head>  
+    <body class="metro" onload=" prettyPrint() ">          
+        <div id="wrap" class="bg-grayLighter">         
+            <header class="bg-dark" data-load="header.html">               
+                <div class="navigation-bar dark">                     
+                    <div class="navigation-bar-content container">                          
+                        <a class="element brand" href="/">                                     
+                            <div class="brand-logo"></div>
+                        </a>     
+                       
+                        <div class="element place-right bg-green">
+                            <span class="fg-white">FREE</span>
+                        </div>                        
+                        <div class="element place-right bg-blue">
+                            <a href="https://github.com/jsreport/jsreport">       
+                                <span class="icon-github fg-white">
+                                </span> 
+                                <span class="fg-white">OPEN SOURCE </span>
+                            </a> 
+                        </div>   
+                        <a class="element brand place-right" href="http://jsreport.net">                                     
+                             <div class="jsreport-logo-nav"></div>
+                        </a>                       
+                    </div>               
+                </div>         
+            </header>                                
+            <div class="grid">{{{fixCoding body}}}       
+            </div> 
+        </div>  
+        <div class="bg-dark block4">                   
+            <div class="container">                         
+                <div class="grid no-margin">                               
+                    <div class="row no-margin">                                     
+                        <a href="http://jsreport.net">
+                            <h2 class="fg-white center">powered by reporting platform</h2>
+                            <span class="jsreport-logo"></span>         
+                        </a>                                                 
+                        <div id="footer" class="bg-dark">            
+                            <div class="fg-grayLighter center">           
+                            </div>                 
+                        </div>            
                               
-            </div>                         
-          </div>                   
-        </div>             
-      </div>    
-    </div>  
-  </body>
+                    </div>                         
+                </div>                   
+            </div>             
+        </div>    
+    </body>
 </html>
