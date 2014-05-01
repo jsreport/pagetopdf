@@ -65,6 +65,8 @@
     <Content Include="public\img\mfr2.png" />
     <Content Include="public\img\postuj screen.png" />
     <Content Include="public\img\postuj.ico" />
+    <Content Include="public\robots.txt" />
+    <Content Include="public\sitemap.xml" />
     <Content Include="README.md" />
     <Content Include="views\404.html" />
     <Content Include="views\about.html" />

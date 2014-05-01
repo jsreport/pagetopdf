@@ -110,3 +110,7 @@ pre {
     padding-left: 20px;
     padding-right: 20px;
 }
+
+.metro #settings-expand .input-control.text input {
+    min-height: 0px;
+}

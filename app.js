@@ -22,12 +22,9 @@ app.get('/', function(req, res) {
     res.render('home');
 });
 
-app.get('/about', function(req, res) {
-    res.render('about');
-});
 
-app.get('/api', function(req, res) {
-    res.render('api');
+app.get('/time', function(req, res) {
+    res.send(new Date());
 });
 
 app.get('*', function(req, res) {
