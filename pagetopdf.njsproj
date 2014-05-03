@@ -30,6 +30,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.js" />
+    <Compile Include="Gruntfile.js" />
     <Compile Include="public\js\custom.js" />
     <Compile Include="public\js\jquery-2.1.0.min.js" />
     <Compile Include="public\js\jquery.widget.min.js" />
