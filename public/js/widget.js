@@ -5,7 +5,7 @@
     var color = jsrRoot.getAttribute("data-color");
  
     var html = 
-    "<form style='display:inline' target='_blank' method='POST' enctype='multipart/form-data' action='https://playground.jsreport.net/api/report' id='jsrForm' >" + 
+    "<form style='display:inline' target='_blank' method='POST' action='https://playground.jsreport.net/api/report' id='jsrForm' >" + 
     "<input hidden='true' style='display: none' type='text' id='jsrUrl' name='template[phantom[url]' />" +
     "<input hidden='true' style='display: none' type='text' id='jsrFormat' name='template[phantom[format]' />" +
     "<input hidden='true' style='display: none' type='text' id='jsrOrientation' name='template[phantom[orientation]' />" +
