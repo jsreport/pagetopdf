@@ -6,9 +6,9 @@
  
     var html = 
     "<form style='display:inline' target='_blank' method='POST' action='https://playground.jsreport.net/api/report' id='jsrForm' >" + 
-    "<input hidden='true' style='display: none' type='text' id='jsrUrl' name='template[phantom[url]' />" +
-    "<input hidden='true' style='display: none' type='text' id='jsrFormat' name='template[phantom[format]' />" +
-    "<input hidden='true' style='display: none' type='text' id='jsrOrientation' name='template[phantom[orientation]' />" +
+    "<input hidden='true' style='display: none' type='text' id='jsrUrl' name='template[phantom][url]' />" +
+    "<input hidden='true' style='display: none' type='text' id='jsrFormat' name='template[phantom][format]' />" +
+    "<input hidden='true' style='display: none' type='text' id='jsrOrientation' name='template[phantom][orientation]' />" +
     "<input hidden='true' style='display: none' type='text' name='template[recipe]' value='phantom-pdf' />" +
     "<input hidden='true' style='display: none' type='text' name='template[content]' value='' />" +
     "<div style='display:inline'><button id='jsrPrint' type='submit' style='background-color:" + color + "; position:relative; padding-left:45px;padding-right:12px; padding-top:5px;padding-bottom:5px;color:white;border: 0 none;'>Print to Pdf" +
